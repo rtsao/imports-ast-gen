@@ -1,0 +1,21 @@
+{
+  "name": "imports-ast-gen",
+  "version": "1.0.0",
+  "description": "ESTree AST helper generators for CommonJS require and ES Modules import declarations",
+  "keywords": [
+    "ast"
+  ],
+  "author": "Ryan Tsao <ryan.j.tsao@gmail.com>",
+  "main": "index.js",
+  "homepage": "https://github.com/rtsao/imports-ast-gen",
+  "repository": "git@github.com/rtsao/imports-ast-gen.git",
+  "bugs": "https://github.com/rtsao/imports-ast-gen/issues",
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "escodegen": "^1.7.1",
+    "tape": "^4.2.2"
+  }
+}
