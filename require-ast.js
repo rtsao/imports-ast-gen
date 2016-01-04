@@ -1,5 +1,7 @@
 'use strict';
 
+var requireExpressionAst = require('./require-expression-ast');
+
 module.exports = generateRequireAst;
 
 function generateRequireAst(varName, moduleName, kind) {
@@ -13,18 +15,8 @@ function generateRequireAst(varName, moduleName, kind) {
         'type': 'Identifier',
         'name': varName
       },
-      init: {
-        type: 'CallExpression',
-        callee: {
-          type: 'Identifier',
-          name: 'require'
-        },
-        arguments: [{
-          type: 'Literal',
-          value: moduleName
-        }]
-      }
+      init: requireExpressionAst(moduleName)
     }],
     kind: kind
-  }
+  };
 }
