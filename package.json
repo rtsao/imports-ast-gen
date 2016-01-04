@@ -1,6 +1,6 @@
 {
   "name": "imports-ast-gen",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "ESTree AST helper generators for CommonJS require and ES Modules import declarations",
   "keywords": [
     "ast"
